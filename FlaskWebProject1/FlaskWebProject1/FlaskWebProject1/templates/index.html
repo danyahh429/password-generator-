@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        <h1>Password Generator</h1>
+        <p class="lead">Create a password for any occasion.</p>
+        <form action="/generate/" method="post">
+            <button name="generateBttn" type="submit" class="btn btn-primary btn-large">Generate&raquo;</button>
+        </form>
+        <br />
+        <br />
+        <h4>Your new password is: {{password}}</h4>
+    </div>
+
+
+{% endblock %}
